@@ -1,0 +1,52 @@
+/* src/components/Header.css */
+.header {
+  position: fixed; /* This will fix the header to the top */
+  top: 0; /* Set it at the very top */
+  left: 0;
+  width: 100%; /* Make it span the full width of the viewport */
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+  z-index: 1000; /* Ensure it stays above other content */
+
+  display: flex;
+  justify-content: space-between; /* Aligns logo and nav links at opposite ends */
+  box-sizing: border-box;
+  align-items: center; /* Vertically centers the items in the header */
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.logo-img {
+  max-width: 100%; /* Make sure image scales responsively */
+  height: auto;
+  pointer-events: none; /* Disable image interactions (click, right-click, etc.) */
+  user-select: none; /* Prevent the image from being selected */
+  /* Disable drag and drop functionality */
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -ms-user-drag: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links li {
+  font-size: 18px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff7f50;
+}
